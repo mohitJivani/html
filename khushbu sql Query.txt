@@ -1,0 +1,51 @@
+1. Create a database with the name 0f filpcart.
+CREATE DATABASE fipcart
+
+2.create a table with the name of feedback fields are id(int),name(varchar),
+surname(varchar).
+CREATE TABLE feedback(id int PRIMARY KEY AUTO_INCREMENT, name varchar(255),
+ surname varchar(255);
+
+3.Add More fields with the name of email(varchar) feedback(varchar) cityy(int) 
+ratinh(int) (1 to 5).
+ALTER TABLE feedback ADD(email varchar(255),feedback varchar(255),city(int),
+rating int(1));
+
+4.change the city data type from int to varchar.
+ALTER TABLE feedback MODIFY city(varchar)(255);
+
+5.insert one more feedback records.
+INSERT INTO feedback (name,surname,email,feedback,city,rating) VALUES
+ ('Khushbu','Chavda',khushbu@gmaiil,com','good','Rajkot','1')
+INSERT INTO feedback (name,surname,email,feedback,city,rating) VALUES 
+('Meera','Chaya','meera@gmaiil.com','good','surat','3');
+INSERT INTO feedback (name,surname,email,feedback,city,rating) VALUES 
+('Krishna','Bhatt','bhatt@gmaiil.com','good','Rajkot','2');
+INSERT INTO feedback (name,surname,email,feedback,city,rating) VALUES 
+('Radhika','Vyas','vyas@gmaiil.com',' good','Vadodara','1');
+INSERT INTO feedback (name,surname,email,feedback,city,rating) VALUES
+ ('Nirali','Shah','shah@gmaiil.com',' good','surat','2');
+INSERT INTO feedback (name,surname,email,feedback,city,rating) VALUES 
+('Kruti','Patel','patel@gmaiil.com',' good','Rajkot','2');
+
+6.update the feedback records.
+UPDATE feedback SET name = 'Mansi' WHERE id=2;
+
+7.iinsert one more feedback record.
+INSERT INTO feedback (name,surname,email,feedback,city,rating) VALUES
+ ('Riddhi','Chavda','chavda@gmail.com','good','Rajkot','1');
+
+8.delete one feedback records.
+DELETE FROM feedback where id='5';
+
+9.arrange all records with maxiimum too miinimum rating.
+SELECT* rating FROM feedback order BY rating DESC;
+
+10.fetch all the users name who gave ratiing.
+SELECT * name FROM feedback ORDER BY rating;
+
+11.Truncate the table.
+TRUNCATE TABLE feedback
+
+12.Drop table feedback.
+DROP TABLE feedback
