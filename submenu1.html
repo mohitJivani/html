@@ -1,0 +1,40 @@
+<html>
+<head>
+        <title>menu</title>
+        <style>
+            .item{
+            
+                width:200px;
+                position:relative;
+                
+            }
+            button{
+                width:200px;
+                cursor:pointer;
+                border:1px solid black;
+            }
+            .menu{
+                position:absolute;
+                display:none;
+            }
+            .menu a{
+                display: block;
+			    text-decoration: none;            
+            }
+            .item:hover .menu{
+                display:block;
+            }
+        </style>
+</head>
+<body>
+        <div class="item">
+            <button>menu</button>
+            <div class="menu">
+                <a href="">home</a>
+                <a href="">about us</a>
+                <a href="">product</a>
+                <a href="">service</a>
+            </div>
+        </div>
+</body>
+</html>

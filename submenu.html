@@ -1,0 +1,45 @@
+<html>
+<head>
+        <title>menu</title>
+        <style>
+            .item{
+                position:relative;
+                width:200px;
+                border:1px solid black;
+            }
+            button{
+                width:200px;
+                cursor:pointer;
+            }
+            .product-list{
+                width: 200px;
+			    position: absolute;
+			    border: 1px solid black;
+			    display: none;
+            }
+            .product-list a{
+                display: block;
+			    text-decoration: none;
+			    padding: 5px 16px;
+			    font-size: 20px;
+            }
+            .item:hover .product-list{
+			display: block;
+		    }
+
+
+
+        </style>
+</head>
+<body>
+        <div class="item">
+            <button>menu</button>
+            <div class="product-list">
+                    <a href="">laptop</a>
+                    <a href="">lcd</a>
+                    <a href="">pc</a>
+                    <a href="">bluetooth</a>            
+            </div>
+        </div>
+</body>
+</html> 
